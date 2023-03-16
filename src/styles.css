@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+    /* You can add global styles to this file, and also import other style files */
+    body{
+        background: url(new_img_16x9.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size:100%;
+        background-color: #27342c ;
+
+
+    }
+    .logo{
+        height: 80px;
+        width: 80px;
+        margin-left: 120px;
+        margin-top: 40px;
+        position: fixed;
+    }
+    .gold{
+        margin-left: 200px;
+        margin-top: 100px;
+        
+            transform: translate(-50%,-50%);
+            
+            font-family: 'Times New Roman',serif;
+            letter-spacing: 5px;
+            font-size: 60px;
+            font-weight: bold;
+            background-image: linear-gradient(
+        to right,
+        #462523 0,
+                #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+        );
+            color:transparent;
+            -webkit-background-clip:text;
+    }
+
+    .nav-items{
+        float: right;
+        /* color: rgb(249, 127, 14); */
+        color: rgb(244, 156, 74);
+        margin-top: 15px;
+        font-size: 19px;
+        padding: 8px;
+        margin-right: 110px;
+        text-decoration: none;
+
+    }
+    .nav-items {
+        display: inline-block;
+        position: relative;
+        
+        color: rgb(244, 156, 74);
+      }
+    .error{
+        display: none;
+    }
+    .nav-items:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: 
+      #e7ee15;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      .nav-items:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .nav-items{
+            display: none;
+
+        }
+        body{
+            background-image: none;
+        }
+        .span{
+            display: none;
+        }
+        .gold{
+            display:none
+            ;
+        }
+
+        .error
+        {
+            margin-top: 300px;
+            color: white;
+            width: 90%;
+            height: 20px;
+            display:flex;   
+            flex-wrap: wrap;
+            align-content: center;
+            
+        }
+      
+    }
